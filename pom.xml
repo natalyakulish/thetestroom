@@ -54,14 +54,29 @@
     </dependencies>
     <profiles>
         <profile>
-            <id>QA</id>
+            <id>bugs-only</id>
             <build>
                 <plugins>
                     <plugin>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <systemPropertyVariables>
-                                <cucumber.options>--tags ~@wip</cucumber.options>
+                                <cucumber.options>--tags @bug</cucumber.options>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>no-bugs</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <systemPropertyVariables>
+                                <cucumber.options>--tags ~@bug</cucumber.options>
                             </systemPropertyVariables>
                         </configuration>
                     </plugin>

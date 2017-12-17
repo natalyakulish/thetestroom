@@ -1,6 +1,5 @@
 Feature: Animal adoption
 
-  @qa
   Scenario Outline: Name should be Displayed below the text enter field
 
     Given User is on "Home" page
@@ -27,6 +26,7 @@ Feature: Animal adoption
       | Name       | Animal name    |
       | Tony Stark | Simba the Lion |
 
+    @bug
   Scenario Outline: User should not be able to adopt when User does not enter a Name
     Given User is on "Home" page
     When User presses "Continue" button
