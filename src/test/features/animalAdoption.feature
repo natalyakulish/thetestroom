@@ -20,7 +20,7 @@ Feature: Animal adoption
     And User presses "Continue" button
     Then confirmation text "Thank you for your selection. Your animal adoption papers will be sent to you shortly with a lovely card from your selected animal." is displayed
 
-
+Some change
     Examples:
 
       | Name       | Animal name    |
