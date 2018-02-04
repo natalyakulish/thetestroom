@@ -20,7 +20,7 @@ ahaha here is something more
     And User presses "Continue" button
     Then confirmation text "Thank you for your selection. Your animal adoption papers will be sent to you shortly with a lovely card from your selected animal." is displayed
 
-Some change # I guess we should probably remove this line, ok?
+Some change # I guess we should probably remove thiss line, ok?
     Examples:
 
       | Name       | Animal name    |
