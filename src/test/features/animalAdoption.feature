@@ -12,7 +12,7 @@ Feature: Animal adoption
       | Tony Stark |
 
   Scenario Outline: Check confirmation text
-
+ahaha here is something more
     Given User is on "Home" page
     When User input "<Name>"
     And User presses "Continue" button
@@ -20,7 +20,7 @@ Feature: Animal adoption
     And User presses "Continue" button
     Then confirmation text "Thank you for your selection. Your animal adoption papers will be sent to you shortly with a lovely card from your selected animal." is displayed
 
-Natas change
+Some change # I guess we should probably remove this line, ok?
     Examples:
 
       | Name       | Animal name    |
